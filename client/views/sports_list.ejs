@@ -1,0 +1,27 @@
+<% include header %>
+    <h1>
+        Sports List
+        <a href="/json/sports" class="btn btn-primary pull-right">Export JSON</a>
+    </h1>
+    <% if (data.length) { %>
+        <% data.forEach(function(entry) { %>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="text-muted pull-right">
+                        <%= entry.id %>
+                    </div>
+                     <a href="/sports/<%= entry.id %>"><%= entry.title %></a>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <% entry.events.forEach(function(event) { %>
+                            <li><%= event.title %></li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+        <% }) %>
+    <% } else { %>
+        No entries!
+    <% } %>
+<% include footer %>

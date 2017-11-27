@@ -1,0 +1,22 @@
+<% include header %>
+    <h1>
+        <%= entries.game.title %>
+        <a href="/json/sports/<%= entries.game.id %>" class="btn btn-primary pull-right">Export JSON</a>
+    </h1>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="text-muted pull-right">
+                        <%= entries.game.id %>
+                    </div>
+                     <a href="/sports/<%= entries.game.id %>"><%= entries.game.title %></a>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <% entries.game.events.forEach(function(event) { %>
+                            <li><a href="/sports/<%= entries.game.id %>/event/<%= event.id %>"><%= event.title %></li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+
+<% include footer %>
