@@ -48,7 +48,7 @@ So do the following:
 in folder < **server** >  I have a small application server that read the json file from the local disk and response it
 the server run at  http://localhost:3002/
 
-I have access the url http://www.betvictor.com/live/en/live/list.json via VPN and save the json file in my local hard disk.
+I have access the url http://www.betvictor.com/live/en/live/list.json via Proxy  and save the json file in my local hard disk.
 
 ---
 
