@@ -52,8 +52,8 @@ I have access the url http://www.betvictor.com/live/en/live/list.json via Proxy 
 
 ---
 
-## TODO
-- Full test coverage by Mocha
+## Test
+- Has a full test coverage by Mocha
 
 ---
 
