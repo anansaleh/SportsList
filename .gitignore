@@ -1,5 +1,4 @@
 /client/node_modules/**
-/client/test/**
 /server/node_modules/**
 *.log
 /.vscode/**

@@ -1,0 +1,27 @@
+<% include header %>
+    <h1>
+        <%= entries.event.title %>
+        <a href="/json/sports/<%= entries.game_id %>/event/<%= entries.event_id %>" class="btn btn-primary pull-right">Export JSON</a>
+    </h1>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="text-muted pull-right">
+                        <%= entries.event.id %>
+                    </div><%= entries.event.title %>
+                </div>
+                <div class="panel-body">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">score: <%= entries.event.score %></h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">event type: <%= entries.event.event_type %></li>
+                            <li class="list-group-item">meeting: <%= entries.event.meeting %></li>
+                            <li class="list-group-item">Home team: <%= entries.event.home_team %></li>
+                            <li class="list-group-item">Away Team: <%= entries.event.away_team %></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+<% include footer %>
